@@ -1,6 +1,6 @@
-# API documentation for Cloud-Barista subsystems
+# API documentation in the Cloud-Barista organization
 
-Through this repository, we will provide API documentation for Cloud-Barista subsystems.
+Through this repository, we will provide API documentation in the Cloud-Barista organization.
 Swagger UI is hosted on GitHub Pages.
 
 Note - The latest API documentation is provided (under development).
@@ -32,6 +32,10 @@ Please, take a look at subsystems for stable versions.
 * Repository: https://github.com/cloud-barista/cm-grasshopper
 * API documentation: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-grasshopper/main/pkg/api/rest/docs/swagger.yaml
 
+## mc-data-manager
+* Repository: https://github.com/cloud-barista/mc-data-manager
+* API documentation: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-data-manager/main/websrc/docs/swagger.yaml
+
 ## CM-Damselfly
 
 * Repository: https://github.com/cloud-barista/cm-damselfly
@@ -46,7 +50,6 @@ Please, take a look at subsystems for stable versions.
 
 * Repository: https://github.com/cloud-barista/cm-ant
 * API documentation: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-ant/main/api/swagger.yaml
-
 
 ## CM-Mayfly
 
