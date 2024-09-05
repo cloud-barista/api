@@ -8,7 +8,7 @@ Please, take a look at subsystems for stable versions.
 
 ## CB-Spider
 * Repository: https://github.com/cloud-barista/cb-spider
-* API documentation: https://github.com/cloud-barista/cb-spider/wiki/CB-Spider-User-Interface#cb-spider-rest-api-documents-and-guide
+* API documentation: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-spider/master/api/swagger.yaml
 
 ## CB-Tumblebug
 
