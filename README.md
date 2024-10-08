@@ -39,7 +39,7 @@ Please, take a look at subsystems for stable versions.
 ## CM-Damselfly
 
 * Repository: https://github.com/cloud-barista/cm-damselfly
-* API documentation: N/A
+* API documentation: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-damselfly/main/api/swagger.yaml
 
 ## CM-Cicada
 
