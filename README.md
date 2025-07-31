@@ -13,7 +13,7 @@ Please, take a look at subsystems for stable versions.
 ## CB-Tumblebug
 
 * Repository: https://github.com/cloud-barista/cb-tumblebug
-* API documentation: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/main/src/api/rest/docs/swagger.yaml
+* API documentation: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/refs/heads/main/src/interface/rest/docs/swagger.yaml
 
 ## CM-Honeybee
 
