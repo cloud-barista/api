@@ -11,11 +11,15 @@ Welcome to the centralized API documentation portal for the Cloud-Barista ecosys
 - [🚧 Projects in Development](#-projects-in-development)
 - [📞 Support & Contributing](#-support--contributing)
 
-## 🚀 Quick Start
+## 🚀 Introduction
+
+⚠️ **Note**: Cloud-Barista is under active development (pre-v1.0) and is not yet stable or secure for production use.
 
 **Latest Documentation (Development Branch)**: The API documentation shown here reflects the latest development versions and may include unreleased features.
 
-**Stable Versions**: For production use, please refer to the specific release versions of each subsystem's documentation.
+**Stable Versions**: Please use the documentation corresponding to a specific stable release tag.
+
+**Get Involved**: Found an issue or have an idea? Please open an issue or connect with us on Slack. We welcome your feedback!
 
 ## 📖 How to Use
 
