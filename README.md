@@ -4,12 +4,10 @@ Welcome to the centralized API documentation portal for the Cloud-Barista ecosys
 
 ## 📋 Table of Contents
 
-- [🚀 Quick Start](#-quick-start)
-- [📖 How to Use](#-how-to-use)
-- [🔗 Core Platform Projects](#-api-documentation-by-project)
-- [📊 Data Management Projects](#-data-management-projects)
-- [🚧 Projects in Development](#-projects-in-development)
-- [📞 Support & Contributing](#-support--contributing)
+- [🚀 Introduction](#introduction)
+- [📖 How to Use](#how-to-use)
+- [🔗 Core Platform Projects](#core-platform-projects)
+- [📞 Support & Contributing](#support--contributing)
 
 ## 🚀 Introduction
 
@@ -94,7 +92,7 @@ Use the URL format: `https://cloud-barista.github.io/api/?url=YOUR_SWAGGER_YAML_
 ### CM-Butterfly
 
 - **Repository**: https://github.com/cloud-barista/cm-butterfly
-- **Releases**: https://github.com/cloud-barista/cm-mayfly/releases
+- **Releases**: https://github.com/cloud-barista/cm-butterfly/releases
 
 ### CM-Mayfly
 
