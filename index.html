@@ -3,17 +3,126 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Swagger UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-Barista API Documentation Hub</title>
+    <meta name="description" content="Centralized API documentation portal for Cloud-Barista ecosystem projects">
+    <meta name="keywords" content="Cloud-Barista, API, Documentation, Swagger, Multi-cloud">
     <link rel="stylesheet" type="text/css" href="dist/swagger-ui.css" />
     <link rel="stylesheet" type="text/css" href="dist/index.css" />
     <link rel="icon" type="image/png" href="dist/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="dist/favicon-16x16.png" sizes="16x16" />
+  
+    <style>
+      #readme-content {
+        margin: 20px auto;
+        max-width: 1200px;
+        padding: 0 20px;
+        display: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        line-height: 1.6;
+      }
+      
+      #readme-content h1 {
+        border-bottom: 2px solid #e1e4e8;
+        padding-bottom: 10px;
+      }
+      
+      #readme-content h2 {
+        border-bottom: 1px solid #e1e4e8;
+        padding-bottom: 8px;
+        margin-top: 32px;
+      }
+      
+      #readme-content h3 {
+        margin-top: 24px;
+        margin-bottom: 16px;
+      }
+      
+      #readme-content blockquote {
+        border-left: 4px solid #dfe2e5;
+        padding-left: 16px;
+        margin-left: 0;
+        color: #6a737d;
+        font-style: italic;
+      }
+      
+      #readme-content code {
+        background-color: rgba(27,31,35,0.05);
+        border-radius: 3px;
+        font-size: 85%;
+        margin: 0;
+        padding: 0.2em 0.4em;
+      }
+      
+      #readme-content a {
+        color: #0366d6;
+        text-decoration: none;
+      }
+      
+      #readme-content a:hover {
+        text-decoration: underline;
+      }
+      
+      #readme-content ul, #readme-content ol {
+        padding-left: 30px;
+      }
+      
+      #readme-content li {
+        margin-bottom: 4px;
+      }
+    </style>
   </head>
 
   <body>
     <div id="swagger-ui"></div>
+    <div id="readme-content"></div>
+
     <script src="dist/swagger-ui-bundle.js" charset="UTF-8"> </script>
     <script src="dist/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
-    <script src="dist/swagger-initializer.js" charset="UTF-8"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"> </script>
+    <script>
+
+      function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+      }
+
+      function fetchReadme(url) {
+        fetch(url)
+          .then(response => response.text())
+          .then(text => {
+            document.getElementById('readme-content').style.display = 'block';
+            document.getElementById('readme-content').innerHTML = marked.parse(text);
+          })
+          .catch(error => console.error('Error fetching README:', error));
+      }
+
+      var swaggerUrl = getUrlParameter('url');
+
+      if (!swaggerUrl) {
+        document.getElementById('readme-content').style.display = 'block';
+        fetchReadme('https://raw.githubusercontent.com/cloud-barista/api/main/README.md');
+      } else {
+        const ui = SwaggerUIBundle({
+          url: swaggerUrl,
+          dom_id: '#swagger-ui',
+          deepLinking: true,
+          tagsSorter: "alpha", 
+          operationsSorter: "alpha",
+          presets: [
+            SwaggerUIBundle.presets.apis,
+            SwaggerUIStandalonePreset
+          ],
+          plugins: [
+            SwaggerUIBundle.plugins.DownloadUrl
+          ],
+          layout: "StandaloneLayout"
+        });
+
+        window.ui = ui;
+      }
+    </script>
   </body>
 </html>
