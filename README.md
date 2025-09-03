@@ -4,10 +4,10 @@ Welcome to the centralized API documentation portal for the Cloud-Barista ecosys
 
 ## 📋 Table of Contents
 
-- [🚀 Introduction](#introduction)
-- [📖 How to Use](#how-to-use)
-- [🔗 Core Platform Projects](#core-platform-projects)
-- [📞 Support & Contributing](#support--contributing)
+- [🚀 Introduction](#-introduction)
+- [📖 How to Use](#-how-to-use)
+- [🔗 Core Platform Projects](#-core-platform-projects)
+- [📞 Support & Contributing](#-support--contributing)
 
 ## 🚀 Introduction
 
