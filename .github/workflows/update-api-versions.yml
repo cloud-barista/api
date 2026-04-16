@@ -1,0 +1,120 @@
+name: Update API Versions in README
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Update API version links in README
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - << 'PYEOF'
+          import subprocess, json, re, sys
+
+          BASE_RAW = "https://raw.githubusercontent.com/cloud-barista"
+          BASE_UI  = "https://cloud-barista.github.io/api/?url="
+
+          PROJECTS = [
+            {"id": "cb-spider",       "repo": "cb-spider",       "branch": "master", "docs": [
+              {"label": None, "path": "api/swagger.yaml"},
+            ]},
+            {"id": "cb-tumblebug",    "repo": "cb-tumblebug",    "branch": "main",   "docs": [
+              {"label": None, "path": "src/interface/rest/docs/swagger.yaml"},
+            ]},
+            {"id": "cm-honeybee",     "repo": "cm-honeybee",     "branch": "main",   "docs": [
+              {"label": "Agent",  "path": "agent/pkg/api/rest/docs/swagger.yaml"},
+              {"label": "Server", "path": "server/pkg/api/rest/docs/swagger.yaml"},
+            ]},
+            {"id": "cm-beetle",       "repo": "cm-beetle",       "branch": "main",   "docs": [
+              {"label": None, "path": "api/swagger.yaml"},
+            ]},
+            {"id": "cm-grasshopper",  "repo": "cm-grasshopper",  "branch": "main",   "docs": [
+              {"label": None, "path": "pkg/api/rest/docs/swagger.yaml"},
+            ]},
+            {"id": "cm-damselfly",    "repo": "cm-damselfly",    "branch": "main",   "docs": [
+              {"label": None, "path": "api/swagger.yaml"},
+            ]},
+            {"id": "cm-cicada",       "repo": "cm-cicada",       "branch": "main",   "docs": [
+              {"label": None, "path": "pkg/api/rest/docs/swagger.yaml"},
+            ]},
+            {"id": "cm-ant",          "repo": "cm-ant",          "branch": "main",   "docs": [
+              {"label": None, "path": "api/swagger.yaml"},
+            ]},
+            {"id": "mc-data-manager", "repo": "mc-data-manager", "branch": "main",   "docs": [
+              {"label": None, "path": "websrc/docs/swagger.yaml"},
+            ]},
+            {"id": "mc-terrarium",    "repo": "mc-terrarium",    "branch": "main",   "docs": [
+              {"label": None, "path": "api/swagger.yaml"},
+            ]},
+          ]
+
+          def swagger_url(repo, ref, path):
+            return f"{BASE_UI}{BASE_RAW}/{repo}/{ref}/{path}"
+
+          def get_releases(repo, count=2):
+            result = subprocess.run(
+              ["gh", "api", f"repos/cloud-barista/{repo}/releases?per_page={count}"],
+              capture_output=True, text=True
+            )
+            if result.returncode != 0:
+              print(f"Warning: failed to get releases for {repo}", file=sys.stderr)
+              return []
+            try:
+              return [r["tag_name"] for r in json.loads(result.stdout)[:count]]
+            except Exception as e:
+              print(f"Warning: could not parse releases for {repo}: {e}", file=sys.stderr)
+              return []
+
+          def build_block(project, releases):
+            repo, branch, docs = project["repo"], project["branch"], project["docs"]
+            lines = ["- **API Documentation**:"]
+            if len(docs) == 1 and docs[0]["label"] is None:
+              path = docs[0]["path"]
+              lines.append(f"  - [latest dev ({branch})]({swagger_url(repo, branch, path)})")
+              for tag in releases:
+                lines.append(f"  - [{tag}]({swagger_url(repo, tag, path)})")
+            else:
+              for doc in docs:
+                lines.append(f"  - **{doc['label']}**:")
+                lines.append(f"    - [latest dev ({branch})]({swagger_url(repo, branch, doc['path'])})")
+                for tag in releases:
+                  lines.append(f"    - [{tag}]({swagger_url(repo, tag, doc['path'])})")
+            return "\n".join(lines)
+
+          with open("README.md", "r") as f:
+            content = f.read()
+
+          for project in PROJECTS:
+            pid      = project["id"]
+            releases = get_releases(project["repo"])
+            block    = build_block(project, releases)
+            start    = f"<!-- VERSIONS:{pid}:START -->"
+            end      = f"<!-- VERSIONS:{pid}:END -->"
+            pattern  = re.compile(r'[ \t]*' + re.escape(start) + r".*?" + r'[ \t]*' + re.escape(end), re.DOTALL)
+            new_content = pattern.sub(f"{start}\n{block}\n{end}", content)
+            if new_content == content:
+              print(f"Warning: markers not found for {pid}", file=sys.stderr)
+            content = new_content
+
+          with open("README.md", "w") as f:
+            f.write(content)
+
+          print("README.md updated successfully")
+          PYEOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet README.md || (
+            git add README.md &&
+            git commit -m "Update API version links in README" &&
+            git push
+          )

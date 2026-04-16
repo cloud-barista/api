@@ -13,9 +13,7 @@ Welcome to the centralized API documentation portal for the Cloud-Barista ecosys
 
 ⚠️ **Note**: Cloud-Barista is under active development (pre-v1.0) and is not yet stable or secure for production use.
 
-**Latest Documentation (Development Branch)**: The API documentation shown here reflects the latest development versions and may include unreleased features.
-
-**Stable Versions**: Please use the documentation corresponding to a specific stable release tag.
+Each project lists API documentation for the **latest development branch** as well as the **two most recent stable releases**, updated automatically every day.
 
 **Get Involved**: Found an issue or have an idea? Please open an issue or connect with us on Slack. We welcome your feedback!
 
@@ -23,17 +21,15 @@ Welcome to the centralized API documentation portal for the Cloud-Barista ecosys
 
 ### Method 1: Direct Access
 
-Click on any "API documentation" link below to view the Swagger UI directly.
+Click on any API documentation link below to view the Swagger UI directly.
 
 ### Method 2: Custom URL
 
-Use the URL format: `https://cloud-barista.github.io/api/?url=YOUR_SWAGGER_YAML_URL` to view any Swagger specification.
+Use the URL format below to view any Swagger specification hosted on GitHub:
 
-### Method 3: Version Selection
-
-- Each project link shows the latest development version
-- For stable versions, visit the "Releases" link of each repository
-- Use format: `https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}/{repo}/{tag}/path/to/swagger.yaml`
+```
+https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}/{repo}/{ref}/path/to/swagger.yaml
+```
 
 ---
 
@@ -42,73 +38,105 @@ Use the URL format: `https://cloud-barista.github.io/api/?url=YOUR_SWAGGER_YAML_
 ### CB-Spider
 
 - **Repository**: https://github.com/cloud-barista/cb-spider
-- **API Documentation**: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-spider/master/api/swagger.yaml
+<!-- VERSIONS:cb-spider:START -->
+- **API Documentation**:
+  - [latest dev (master)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-spider/master/api/swagger.yaml)
+  <!-- VERSIONS:cb-spider:END -->
 - **Releases**: https://github.com/cloud-barista/cb-spider/releases
 
 ### CB-Tumblebug
 
 - **Repository**: https://github.com/cloud-barista/cb-tumblebug
-- **API Documentation**: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/main/src/interface/rest/docs/swagger.yaml
+<!-- VERSIONS:cb-tumblebug:START -->
+- **API Documentation**:
+  - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/main/src/interface/rest/docs/swagger.yaml)
+  <!-- VERSIONS:cb-tumblebug:END -->
 - **Releases**: https://github.com/cloud-barista/cb-tumblebug/releases
 
 ### CM-Honeybee
 
 - **Repository**: https://github.com/cloud-barista/cm-honeybee
+<!-- VERSIONS:cm-honeybee:START -->
 - **API Documentation**:
-  - **Agent**: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-honeybee/main/agent/pkg/api/rest/docs/swagger.yaml
-  - **Server**: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-honeybee/main/server/pkg/api/rest/docs/swagger.yaml
+  - **Agent**:
+    - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-honeybee/main/agent/pkg/api/rest/docs/swagger.yaml)
+  - **Server**: - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-honeybee/main/server/pkg/api/rest/docs/swagger.yaml)
+  <!-- VERSIONS:cm-honeybee:END -->
 - **Releases**: https://github.com/cloud-barista/cm-honeybee/releases
 
 ### CM-Beetle
 
 - **Repository**: https://github.com/cloud-barista/cm-beetle
-- **API Documentation**: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-beetle/main/api/swagger.yaml
+<!-- VERSIONS:cm-beetle:START -->
+- **API Documentation**:
+  - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-beetle/main/api/swagger.yaml)
+  <!-- VERSIONS:cm-beetle:END -->
 - **Releases**: https://github.com/cloud-barista/cm-beetle/releases
 
 ### CM-Grasshopper
 
 - **Repository**: https://github.com/cloud-barista/cm-grasshopper
-- **API Documentation**: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-grasshopper/main/pkg/api/rest/docs/swagger.yaml
+<!-- VERSIONS:cm-grasshopper:START -->
+- **API Documentation**:
+  - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-grasshopper/main/pkg/api/rest/docs/swagger.yaml)
+  <!-- VERSIONS:cm-grasshopper:END -->
 - **Releases**: https://github.com/cloud-barista/cm-grasshopper/releases
 
 ### CM-Damselfly
 
 - **Repository**: https://github.com/cloud-barista/cm-damselfly
-- **API Documentation**: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-damselfly/main/api/swagger.yaml
+<!-- VERSIONS:cm-damselfly:START -->
+- **API Documentation**:
+  - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-damselfly/main/api/swagger.yaml)
+  <!-- VERSIONS:cm-damselfly:END -->
 - **Releases**: https://github.com/cloud-barista/cm-damselfly/releases
 
 ### CM-Cicada
 
 - **Repository**: https://github.com/cloud-barista/cm-cicada
-- **API Documentation**: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-cicada/main/pkg/api/rest/docs/swagger.yaml
+<!-- VERSIONS:cm-cicada:START -->
+- **API Documentation**:
+  - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-cicada/main/pkg/api/rest/docs/swagger.yaml)
+  <!-- VERSIONS:cm-cicada:END -->
 - **Releases**: https://github.com/cloud-barista/cm-cicada/releases
 
 ### CM-Ant
 
 - **Repository**: https://github.com/cloud-barista/cm-ant
-- **API Documentation**: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-ant/main/api/swagger.yaml
+<!-- VERSIONS:cm-ant:START -->
+- **API Documentation**:
+  - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-ant/main/api/swagger.yaml)
+  <!-- VERSIONS:cm-ant:END -->
 - **Releases**: https://github.com/cloud-barista/cm-ant/releases
 
 ### CM-Butterfly
 
 - **Repository**: https://github.com/cloud-barista/cm-butterfly
+- **API Documentation**: Not available (no REST API specification)
 - **Releases**: https://github.com/cloud-barista/cm-butterfly/releases
 
 ### CM-Mayfly
 
 - **Repository**: https://github.com/cloud-barista/cm-mayfly
+- **API Documentation**: Not available (no REST API specification)
 - **Releases**: https://github.com/cloud-barista/cm-mayfly/releases
 
 ### mc-data-manager
 
 - **Repository**: https://github.com/cloud-barista/mc-data-manager
-- **API Documentation**: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-data-manager/main/websrc/docs/swagger.yaml
+<!-- VERSIONS:mc-data-manager:START -->
+- **API Documentation**:
+  - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-data-manager/main/websrc/docs/swagger.yaml)
+  <!-- VERSIONS:mc-data-manager:END -->
 - **Releases**: https://github.com/cloud-barista/mc-data-manager/releases
 
 ### mc-terrarium
 
 - **Repository**: https://github.com/cloud-barista/mc-terrarium
-- **API Documentation**: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-terrarium/main/api/swagger.yaml
+<!-- VERSIONS:mc-terrarium:START -->
+- **API Documentation**:
+  - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-terrarium/main/api/swagger.yaml)
+  <!-- VERSIONS:mc-terrarium:END -->
 - **Releases**: https://github.com/cloud-barista/mc-terrarium/releases
 
 ---
