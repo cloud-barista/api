@@ -2,7 +2,8 @@ name: Update API Versions in README
 
 on:
   schedule:
-    - cron: "0 2 * * *"
+    # Runs daily at 21:00 UTC / 06:00 KST (UTC+9)
+    - cron: "0 21 * * *"
   workflow_dispatch:
 
 jobs:
