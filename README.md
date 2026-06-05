@@ -79,8 +79,8 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 <!-- VERSIONS:cm-beetle:START -->
 - **API Documentation**:
   - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-beetle/main/api/swagger.yaml)
+  - [v0.5.1](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-beetle/v0.5.1/api/swagger.yaml)
   - [v0.5.0](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-beetle/v0.5.0/api/swagger.yaml)
-  - [v0.4.7](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-beetle/v0.4.7/api/swagger.yaml)
 <!-- VERSIONS:cm-beetle:END -->
 - **Releases**: https://github.com/cloud-barista/cm-beetle/releases
 
@@ -147,7 +147,7 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 - **API Documentation**:
   - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-data-manager/main/websrc/docs/swagger.yaml)
   - [0.6.6](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-data-manager/0.6.6/websrc/docs/swagger.yaml)
-  - [v0.5.3](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-data-manager/v0.5.3/websrc/docs/swagger.yaml)
+  - [v0.5.4](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-data-manager/v0.5.4/websrc/docs/swagger.yaml)
 <!-- VERSIONS:mc-data-manager:END -->
 - **Releases**: https://github.com/cloud-barista/mc-data-manager/releases
 
