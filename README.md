@@ -52,8 +52,8 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 <!-- VERSIONS:cb-tumblebug:START -->
 - **API Documentation**:
   - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/main/src/interface/rest/docs/swagger.yaml)
+  - [v0.12.14](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/v0.12.14/src/interface/rest/docs/swagger.yaml)
   - [v0.12.13](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/v0.12.13/src/interface/rest/docs/swagger.yaml)
-  - [v0.12.12](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/v0.12.12/src/interface/rest/docs/swagger.yaml)
 <!-- VERSIONS:cb-tumblebug:END -->
 - **Releases**: https://github.com/cloud-barista/cb-tumblebug/releases
 
@@ -101,8 +101,8 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 <!-- VERSIONS:cm-damselfly:START -->
 - **API Documentation**:
   - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-damselfly/main/api/swagger.yaml)
+  - [v0.5.1](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-damselfly/v0.5.1/api/swagger.yaml)
   - [v0.5.0](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-damselfly/v0.5.0/api/swagger.yaml)
-  - [0.4.1](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-damselfly/0.4.1/api/swagger.yaml)
 <!-- VERSIONS:cm-damselfly:END -->
 - **Releases**: https://github.com/cloud-barista/cm-damselfly/releases
 
