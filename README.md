@@ -146,8 +146,8 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 <!-- VERSIONS:mc-data-manager:START -->
 - **API Documentation**:
   - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-data-manager/main/websrc/docs/swagger.yaml)
+  - [v0.6.0](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-data-manager/v0.6.0/websrc/docs/swagger.yaml)
   - [v0.5.5](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-data-manager/v0.5.5/websrc/docs/swagger.yaml)
-  - [v0.5.4](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/mc-data-manager/v0.5.4/websrc/docs/swagger.yaml)
 <!-- VERSIONS:mc-data-manager:END -->
 - **Releases**: https://github.com/cloud-barista/mc-data-manager/releases
 
