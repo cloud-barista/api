@@ -73,17 +73,41 @@ jobs:
               print(f"Warning: could not parse releases for {repo}: {e}", file=sys.stderr)
               return []
 
+          def count_operations(repo, ref, path):
+            """Fetch swagger.yaml and count the number of HTTP operations."""
+            import urllib.request
+            url = f"https://raw.githubusercontent.com/cloud-barista/{repo}/{ref}/{path}"
+            try:
+              with urllib.request.urlopen(url, timeout=10) as r:
+                text = r.read().decode()
+              # Count HTTP method keys under paths — works without a YAML parser
+              methods = ("get:", "post:", "put:", "delete:", "patch:", "head:", "options:")
+              return sum(
+                1 for line in text.splitlines()
+                if line.strip() in methods
+              )
+            except Exception as e:
+              print(f"Warning: could not fetch {url}: {e}", file=sys.stderr)
+              return None
+
+          def fmt_ops(n):
+            return f" ({n} APIs)" if n is not None else ""
+
           def build_block(project, releases):
             repo, branch, docs = project["repo"], project["branch"], project["docs"]
-            lines = ["- **API Documentation**:"]
+            lines = []
             if len(docs) == 1 and docs[0]["label"] is None:
               path = docs[0]["path"]
+              ops  = count_operations(repo, branch, path)
+              lines.append(f"- **API Documentation**{fmt_ops(ops)}:")
               lines.append(f"  - [latest dev ({branch})]({swagger_url(repo, branch, path)})")
               for tag in releases:
                 lines.append(f"  - [{tag}]({swagger_url(repo, tag, path)})")
             else:
+              lines.append("- **API Documentation**:")
               for doc in docs:
-                lines.append(f"  - **{doc['label']}**:")
+                ops = count_operations(repo, branch, doc["path"])
+                lines.append(f"  - **{doc['label']}**{fmt_ops(ops)}:")
                 lines.append(f"    - [latest dev ({branch})]({swagger_url(repo, branch, doc['path'])})")
                 for tag in releases:
                   lines.append(f"    - [{tag}]({swagger_url(repo, tag, doc['path'])})")
