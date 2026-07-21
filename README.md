@@ -123,8 +123,8 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 <!-- VERSIONS:cm-ant:START -->
 - **API Documentation** (28 APIs):
   - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-ant/main/api/swagger.yaml)
+  - [v0.5.7](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-ant/v0.5.7/api/swagger.yaml)
   - [v0.5.6](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-ant/v0.5.6/api/swagger.yaml)
-  - [v0.5.5](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-ant/v0.5.5/api/swagger.yaml)
 <!-- VERSIONS:cm-ant:END -->
 - **Releases**: https://github.com/cloud-barista/cm-ant/releases
 
