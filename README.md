@@ -112,8 +112,8 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 <!-- VERSIONS:cm-cicada:START -->
 - **API Documentation** (51 APIs):
   - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-cicada/main/pkg/api/rest/docs/swagger.yaml)
+  - [v0.6.1](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-cicada/v0.6.1/pkg/api/rest/docs/swagger.yaml)
   - [v0.6.0](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-cicada/v0.6.0/pkg/api/rest/docs/swagger.yaml)
-  - [v0.5.3](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-cicada/v0.5.3/pkg/api/rest/docs/swagger.yaml)
 <!-- VERSIONS:cm-cicada:END -->
 - **Releases**: https://github.com/cloud-barista/cm-cicada/releases
 
