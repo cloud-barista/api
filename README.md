@@ -39,7 +39,7 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 
 - **Repository**: https://github.com/cloud-barista/cb-spider
 <!-- VERSIONS:cb-spider:START -->
-- **API Documentation** (267 APIs):
+- **API Documentation** (270 APIs):
   - [latest dev (master)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-spider/master/api/swagger.yaml)
   - [v0.13.19](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-spider/v0.13.19/api/swagger.yaml)
   - [v0.13.18](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-spider/v0.13.18/api/swagger.yaml)
