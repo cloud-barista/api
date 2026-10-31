@@ -41,8 +41,8 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 <!-- VERSIONS:cb-spider:START -->
 - **API Documentation** (282 APIs):
   - [latest dev (master)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-spider/master/api/swagger.yaml)
+  - [v0.13.21](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-spider/v0.13.21/api/swagger.yaml)
   - [v0.13.20](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-spider/v0.13.20/api/swagger.yaml)
-  - [v0.13.19](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-spider/v0.13.19/api/swagger.yaml)
 <!-- VERSIONS:cb-spider:END -->
 - **Releases**: https://github.com/cloud-barista/cb-spider/releases
 
@@ -79,8 +79,8 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 <!-- VERSIONS:cm-beetle:START -->
 - **API Documentation** (98 APIs):
   - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-beetle/main/api/swagger.yaml)
+  - [v0.6.3](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-beetle/v0.6.3/api/swagger.yaml)
   - [v0.6.2](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-beetle/v0.6.2/api/swagger.yaml)
-  - [v0.6.1](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-beetle/v0.6.1/api/swagger.yaml)
 <!-- VERSIONS:cm-beetle:END -->
 - **Releases**: https://github.com/cloud-barista/cm-beetle/releases
 
