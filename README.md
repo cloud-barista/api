@@ -99,7 +99,7 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 
 - **Repository**: https://github.com/cloud-barista/cm-damselfly
 <!-- VERSIONS:cm-damselfly:START -->
-- **API Documentation** (34 APIs):
+- **API Documentation** (35 APIs):
   - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-damselfly/main/api/swagger.yaml)
   - [v0.6.4](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-damselfly/v0.6.4/api/swagger.yaml)
   - [v0.6.3](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-damselfly/v0.6.3/api/swagger.yaml)
