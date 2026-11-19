@@ -52,8 +52,8 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 <!-- VERSIONS:cb-tumblebug:START -->
 - **API Documentation** (377 APIs):
   - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/main/src/interface/rest/docs/swagger.yaml)
+  - [v0.13.9](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/v0.13.9/src/interface/rest/docs/swagger.yaml)
   - [v0.13.8](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/v0.13.8/src/interface/rest/docs/swagger.yaml)
-  - [v0.13.7](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/v0.13.7/src/interface/rest/docs/swagger.yaml)
 <!-- VERSIONS:cb-tumblebug:END -->
 - **Releases**: https://github.com/cloud-barista/cb-tumblebug/releases
 
