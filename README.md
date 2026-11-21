@@ -50,7 +50,7 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
 
 - **Repository**: https://github.com/cloud-barista/cb-tumblebug
 <!-- VERSIONS:cb-tumblebug:START -->
-- **API Documentation** (377 APIs):
+- **API Documentation** (378 APIs):
   - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/main/src/interface/rest/docs/swagger.yaml)
   - [v0.13.9](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/v0.13.9/src/interface/rest/docs/swagger.yaml)
   - [v0.13.8](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/v0.13.8/src/interface/rest/docs/swagger.yaml)
@@ -66,7 +66,7 @@ https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/{org}
     - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-honeybee/main/agent/pkg/api/rest/docs/swagger.yaml)
     - [v0.6.4](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-honeybee/v0.6.4/agent/pkg/api/rest/docs/swagger.yaml)
     - [v0.6.3](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-honeybee/v0.6.3/agent/pkg/api/rest/docs/swagger.yaml)
-  - **Server** (80 APIs):
+  - **Server** (95 APIs):
     - [latest dev (main)](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-honeybee/main/server/pkg/api/rest/docs/swagger.yaml)
     - [v0.6.4](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-honeybee/v0.6.4/server/pkg/api/rest/docs/swagger.yaml)
     - [v0.6.3](https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cm-honeybee/v0.6.3/server/pkg/api/rest/docs/swagger.yaml)
